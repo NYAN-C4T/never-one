@@ -1,0 +1,21 @@
+html {
+  height:  100%;
+  width: 100%;
+  font-family: 'Questrial', sans-serif;
+  textarea:focus {
+    outline: none;
+  }
+  input:focus {
+    outline: none;
+  }
+  body {
+    height:  100%;
+    width: 100%;
+    .wrapper {
+      height:  100%;
+      width: 100%;
+      background-color: #222222;
+      color: #bbbbbb;
+    }
+  }
+}

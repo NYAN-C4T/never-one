@@ -1,0 +1,10 @@
+.wrapper
+  #contents
+    #main-content
+      .main-content__preview
+        %h1.main-content__preview--title {{ title }}
+        %ul.main-content__preview--rows
+          %li{"v-on:click": "titleToggle", "v-for": "(item, index) in preview", class: "main-content__preview--rows"} {{ item.row }}
+      .main-content__input
+        %input{"v-model": "title", class: "main-content__input--title", maxlength: "10"}
+        %textarea{"v-on:keyup": "createReturn", "v-model": "message", class: "main-content__input--form"}
